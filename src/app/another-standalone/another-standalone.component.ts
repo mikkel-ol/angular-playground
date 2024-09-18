@@ -6,17 +6,11 @@ import { Component } from "@angular/core";
   imports: [],
   templateUrl: "./another-standalone.component.html",
   styleUrl: "./another-standalone.component.scss",
-  providers: [
-    // {
-    //   provide: NgZone,
-    //   useFactory: () => inject(THINGY),
-    // },
-  ],
 })
 export class AnotherStandaloneComponent {
   error() {
     setTimeout(() => {
-      throw new Error("Error in standalone component");
+      throw new Error();
     }, 200);
   }
 

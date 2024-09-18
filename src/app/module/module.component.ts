@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
 export class ModuleComponent {
   error() {
     setTimeout(() => {
-      throw new Error("Error in module component");
+      throw new Error();
     }, 200);
   }
 

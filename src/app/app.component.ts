@@ -10,7 +10,7 @@ export class AppComponent {
 
   error() {
     setTimeout(() => {
-      throw new Error("Error in ROOT component");
+      throw new Error("HOST");
     }, 200);
   }
 }

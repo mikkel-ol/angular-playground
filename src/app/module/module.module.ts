@@ -10,7 +10,7 @@ import { ModuleComponent } from "./module.component";
       provide: ErrorHandler,
       useClass: class implements ErrorHandler {
         handleError(error: any): void {
-          console.error("Error in module application", error);
+          console.error("MODULE", error);
         }
       },
     },

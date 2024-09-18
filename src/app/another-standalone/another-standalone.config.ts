@@ -6,7 +6,7 @@ export const anotherStandaloneConfig: ApplicationConfig = {
       provide: ErrorHandler,
       useClass: class implements ErrorHandler {
         handleError(error: any): void {
-          console.error("Error in another standalone application", error);
+          console.error("ANOTHER STANDALONE", error);
         }
       },
     },
